@@ -4,11 +4,10 @@ using System;
 namespace Teste
 {
     class Program
-    {
-        private IResponse response;
-        public Program()
+    { 
+        public Program(IResponse response)
         {
-            response = new Response.Response();
+            var result = response.Ok("");
         }
 
         static void Main(string[] args)

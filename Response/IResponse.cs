@@ -7,8 +7,8 @@ namespace Response
     public interface IResponse
     {
          
-        Response Ok();
-        Response<T> Ok<T>(T obj);
+        ResponseModel Ok();
+        ResponseModel<T> Ok<T>(T obj);
         void AddError(string error);
         void AddError(Error error);
     }
