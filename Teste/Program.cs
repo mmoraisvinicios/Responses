@@ -7,7 +7,7 @@ namespace Teste
     { 
         public Program(IResponse response)
         {
-            var result = response.Ok("");
+            var result = response.Fail();
         }
 
         static void Main(string[] args)
